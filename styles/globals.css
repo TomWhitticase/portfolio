@@ -1,26 +1,57 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  h1 {
+    @apply text-6xl font-bold drop-shadow-lg font-title;
   }
-  body {
-    color: white;
-    background: black;
+  h2 {
+    @apply text-4xl font-bold drop-shadow-lg font-title;
+  }
+  h3 {
+    @apply text-lg drop-shadow-lg font-body text-gray-medium;
+  }
+
+  p {
+    @apply text-base drop-shadow-lg font-body text-gray-medium;
+  }
+
+  .btn-1 {
+    @apply bg-green-light rounded-lg shadow-lg text-white py-4 px-8 font-bold font-title text-lg;
+  }
+  .icon {
+    @apply text-3xl text-gray-dark;
+  }
+
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+    @apply bg-white;
+  }
+
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  .card:hover .tag {
+    visibility: visible;
+  }
+  .tag {
+    visibility: hidden;
+  }
+
+  .card__header {
+    @apply text-white p-4 bg-white;
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+  }
+
+  .card:hover .card__header {
+    transform: translateY(0);
   }
 }
