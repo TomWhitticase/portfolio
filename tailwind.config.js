@@ -34,11 +34,11 @@ module.exports = {
       addVariant("child-hover", "& > *:hover");
       addVariant(
         "mobile-only",
-        "@media screen and (max-width: theme('screens.sm'))"
+        "@media screen and (max-width: theme('screens.md'))"
       );
       addVariant(
         "desktop-only",
-        "@media screen and (min-width: theme('screens.sm'))"
+        "@media screen and (min-width: theme('screens.md'))"
       );
     },
   ],

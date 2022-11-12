@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply scroll-smooth;
+  }
   h1 {
     @apply text-6xl font-bold drop-shadow-lg font-title;
   }
@@ -53,5 +56,25 @@
 
   .card:hover .card__header {
     transform: translateY(0);
+  }
+
+  .hover-underline {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .hover-underline::before {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    @apply bg-green-light w-full h-1 rounded-full;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .hover-underline:hover::before {
+    transform: scaleX(1);
   }
 }

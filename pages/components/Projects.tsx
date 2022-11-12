@@ -3,6 +3,7 @@ import Project from "./Project";
 
 //useSWR allows the use of SWR inside function components
 import useSWR from "swr";
+import { time } from "console";
 
 //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -18,7 +19,12 @@ function Projects() {
   if (!data) return <div>Loading...</div>;
 
   const projects = JSON.parse(data);
-  console.log(projects);
+
+  let uniqueId = 0;
+  function getUniqueId(): number {
+    uniqueId++;
+    return uniqueId;
+  }
 
   let projectElements: any = [];
   projects.forEach(
@@ -33,6 +39,7 @@ function Projects() {
     }) => {
       projectElements.push(
         <Project
+          key={getUniqueId()}
           title={project.title}
           description={project.description}
           date={project.date}
@@ -47,8 +54,10 @@ function Projects() {
 
   //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
   return (
-    <div className="flex flex-wrap justify-center items-center gap-8">
-      {projectElements}
+    <div className="bg-[url('/images/Hexagon.svg')] dark:bg-[url('/images/Hexagon-dark.svg')] bg-fixed bg-cover bg-no-repeat w-screen">
+      <div className="flex flex-wrap gap-8 p-8 justify-center">
+        {projectElements}
+      </div>
     </div>
   );
 }
