@@ -3,7 +3,7 @@ import Skill from "./Skill";
 
 function Skills() {
   return (
-    <div className="bg-green-light py-16 px-4 w-screen">
+    <div className="bg-green-light py-16 px-4 w-full">
       <h2 className="text-center p-4 pt-8 text-white">Languages</h2>
       <div className="flex flex-wrap justify-center gap-4">
         <Skill text={"HTML"} imageSrc={"images/html-5.png"}></Skill>

@@ -28,10 +28,9 @@ function Project({
     <div className="card shadow-lg rounded-lg relative overflow-hidden mobile-only:w-64 desktop-only:w-96 h-80">
       <img src={imageSrc} className="object-cover w-full h-[80%]" alt="" />
       <div className="absolute top-0">
-        {/* adding p-2 gap-2 below messes up screen width???? */}
-        <div className="flex flex-wrap child:text-xs child:z-[3] child:shadow-lg child:rounded-md child:p-2">
-          {tags.map((el) => (
-            <span className="tag bg-green-light text-white font-bold">
+        <div className="flex p-2 gap-2 flex-wrap child:text-xs child:z-[3] child:shadow-lg child:rounded-md child:p-2">
+          {tags?.map((el, i) => (
+            <span key={i} className="tag bg-green-light text-white font-bold">
               {el}
             </span>
           ))}

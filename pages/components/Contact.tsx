@@ -11,7 +11,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="bg-[url('/images/polygons.svg')]  bg-fixed bg-cover bg-no-repeat w-screen"
+      className="bg-[url('/images/polygons.svg')]  bg-fixed bg-cover bg-no-repeat w-full"
     >
       <form
         id="contact-form"

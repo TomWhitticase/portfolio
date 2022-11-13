@@ -11,7 +11,7 @@ type subHeaderProps = {
 
 function SubHeader({ icon, text }: subHeaderProps) {
   return (
-    <div className="w-screen bg-main shadow-lg py-8 text-center">
+    <div className="w-full bg-main shadow-lg z-[5] relative py-8 text-center">
       <h2>
         {text}
         <FontAwesomeIcon icon={icon} className="text-orange mx-1" />

@@ -3,11 +3,12 @@ import React from "react";
 type navButtonProps = {
   text: string;
   href: string;
+  onClick: any;
 };
 
-function NavButton({ text, href }: navButtonProps) {
+function NavButton({ text, href, onClick }: navButtonProps) {
   return (
-    <a className="hover-underline" href={href}>
+    <a onClick={onClick} className="hover-underline" href={href}>
       {text}
     </a>
   );

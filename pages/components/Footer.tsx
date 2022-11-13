@@ -9,7 +9,7 @@ import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
-    <footer className="bg-black w-screen text-xl text-center text-white flex flex-col justify-center gap-4">
+    <footer className="bg-black w-full text-xl text-center text-white flex flex-col justify-center gap-4">
       <div className="text-2xl p-4 flex gap-8 justify-center">
         <a href="https://www.linkedin.com/in/tom-whitticase/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>

@@ -35,12 +35,21 @@ function toggleMobileNav() {
     : mobNav?.classList.add("hidden");
 }
 
+function closeNav() {
+  const mobNav = document.getElementById("mobile-nav");
+  mobNav?.classList.add("hidden");
+}
+function showNav() {
+  const mobNav = document.getElementById("mobile-nav");
+  mobNav?.classList.remove("hidden");
+}
+
 export default function Home() {
   return (
     <main className="">
       <title>Tom Whitticase</title>
-      <Header toggleMobileNav={toggleMobileNav}></Header>
-      <MobileNav toggleMobileNav={toggleMobileNav}></MobileNav>
+      <Header showNav={showNav}></Header>
+      <MobileNav closeNav={closeNav}></MobileNav>
       <div id="home"></div>
       <Landing></Landing>
       <div id="about"></div>

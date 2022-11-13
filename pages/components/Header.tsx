@@ -4,10 +4,10 @@ import React from "react";
 import NavButton from "./NavButton";
 
 type headerProps = {
-  toggleMobileNav: any;
+  showNav: any;
 };
 
-function Header({ toggleMobileNav }: headerProps) {
+function Header({ showNav }: headerProps) {
   return (
     <header className="fixed top-0 w-screen shadow-lg p-4 h-16 bg-main/80 backdrop-blur-lg z-10">
       <div className="flex justify-between mx-8">
@@ -19,13 +19,25 @@ function Header({ toggleMobileNav }: headerProps) {
           TomWhitticase
         </a>
         <div className="flex justify-center items-center gap-8 font-bold font-title mobile-only:hidden">
-          <NavButton text={"Home"} href={"#home"}></NavButton>
-          <NavButton text={"About"} href={"#about"}></NavButton>
-          <NavButton text={"Skills"} href={"#skills"}></NavButton>
-          <NavButton text={"Projects"} href={"#projects"}></NavButton>
-          <NavButton text={"Contact"} href={"#contact"}></NavButton>
+          <NavButton onClick={null} text={"Home"} href={"#home"}></NavButton>
+          <NavButton onClick={null} text={"About"} href={"#about"}></NavButton>
+          <NavButton
+            onClick={null}
+            text={"Skills"}
+            href={"#skills"}
+          ></NavButton>
+          <NavButton
+            onClick={null}
+            text={"Projects"}
+            href={"#projects"}
+          ></NavButton>
+          <NavButton
+            onClick={null}
+            text={"Contact"}
+            href={"#contact"}
+          ></NavButton>
         </div>
-        <button className="desktop-only:hidden" onClick={toggleMobileNav}>
+        <button className="desktop-only:hidden" onClick={showNav}>
           <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
         </button>
       </div>

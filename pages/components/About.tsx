@@ -4,7 +4,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-screen bg-[url('/images/mountains.svg')] bg-no-repeat bg-cover bg-fixed">
+    <div className="w-full bg-[url('/images/mountains.svg')] bg-no-repeat bg-cover bg-fixed">
       <div className="flex flex-row gap-10 flex-wrap justify-center">
         <div className="flex desktop-only:flex-row mobile-only:flex-col gap-10 py-16">
           <img
