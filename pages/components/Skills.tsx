@@ -1,7 +1,7 @@
 import React from "react";
 import Skill from "./Skill";
 
-function Skills() {
+export default function Skills() {
   return (
     <div className="bg-green-light py-16 px-4 w-full">
       <h2 className="text-center p-4 pt-8 text-white">Languages</h2>
@@ -42,5 +42,3 @@ function Skills() {
     </div>
   );
 }
-
-export default Skills;

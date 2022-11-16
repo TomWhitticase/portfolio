@@ -1,17 +1,15 @@
 import React from "react";
 
-type navButtonProps = {
+interface INavButtonProps {
   text: string;
   href: string;
   onClick: any;
-};
+}
 
-function NavButton({ text, href, onClick }: navButtonProps) {
+export default function NavButton({ text, href, onClick }: INavButtonProps) {
   return (
     <a onClick={onClick} className="hover-underline" href={href}>
       {text}
     </a>
   );
 }
-
-export default NavButton;

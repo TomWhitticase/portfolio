@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import NavButton from "./NavButton";
 
-type headerProps = {
-  showNav: any;
-};
+interface IHeaderProps {
+  setNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-function Header({ showNav }: headerProps) {
+export default function Header({ setNavOpen }: IHeaderProps) {
   return (
     <header className="fixed top-0 w-screen shadow-lg p-4 h-16 bg-main/80 backdrop-blur-lg z-10">
       <div className="flex justify-between mx-8">
@@ -19,30 +19,30 @@ function Header({ showNav }: headerProps) {
           TomWhitticase
         </a>
         <div className="flex justify-center items-center gap-8 font-bold font-title mobile-only:hidden">
-          <NavButton onClick={null} text={"Home"} href={"#home"}></NavButton>
-          <NavButton onClick={null} text={"About"} href={"#about"}></NavButton>
-          <NavButton
-            onClick={null}
-            text={"Skills"}
-            href={"#skills"}
-          ></NavButton>
-          <NavButton
-            onClick={null}
-            text={"Projects"}
-            href={"#projects"}
-          ></NavButton>
-          <NavButton
-            onClick={null}
-            text={"Contact"}
-            href={"#contact"}
-          ></NavButton>
+          {[
+            { text: "Home", href: "#home" },
+            { text: "About", href: "#about" },
+            { text: "Skills", href: "#skills" },
+            { text: "Projects", href: "#projects" },
+            { text: "Contact", href: "#contact" },
+          ].map(({ text, href }, index) => {
+            return (
+              <NavButton
+                key={index}
+                onClick={() => setNavOpen(false)}
+                text={text}
+                href={href}
+              ></NavButton>
+            );
+          })}
         </div>
-        <button className="desktop-only:hidden" onClick={showNav}>
+        <button
+          className="desktop-only:hidden"
+          onClick={() => setNavOpen(true)}
+        >
           <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
         </button>
       </div>
     </header>
   );
 }
-
-export default Header;

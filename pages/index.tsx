@@ -27,44 +27,30 @@ import Landing from "./components/Landing";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import MobileNav from "./components/MobileNav";
-
-function toggleMobileNav() {
-  const mobNav = document.getElementById("mobile-nav");
-  mobNav?.classList.contains("hidden") //toggle hidden class
-    ? mobNav.classList.remove("hidden")
-    : mobNav?.classList.add("hidden");
-}
-
-function closeNav() {
-  const mobNav = document.getElementById("mobile-nav");
-  mobNav?.classList.add("hidden");
-}
-function showNav() {
-  const mobNav = document.getElementById("mobile-nav");
-  mobNav?.classList.remove("hidden");
-}
+import React, { useState } from "react";
 
 export default function Home() {
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <main className="">
       <title>Tom Whitticase</title>
-      <Header showNav={showNav}></Header>
-      <MobileNav closeNav={closeNav}></MobileNav>
+      <Header setNavOpen={setNavOpen} />
+      <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
       <div id="home"></div>
-      <Landing></Landing>
+      <Landing />
       <div id="about"></div>
-      <SubHeader icon={faUser} text={"About Me"}></SubHeader>
-      <About></About>
+      <SubHeader icon={faUser} text={"About Me"} />
+      <About />
       <div id="skills"></div>
-      <SubHeader icon={faCogs} text={"Skills"}></SubHeader>
+      <SubHeader icon={faCogs} text={"Skills"} />
       <Skills></Skills>
       <div id="projects"></div>
-      <SubHeader icon={faLightbulb} text={"Projects"}></SubHeader>
+      <SubHeader icon={faLightbulb} text={"Projects"} />
       <Projects></Projects>
       <div id="contact"></div>
-      <SubHeader icon={faHandshakeSimple} text={"Contact Me"}></SubHeader>
-      <Contact></Contact>
-      <Footer></Footer>
+      <SubHeader icon={faHandshakeSimple} text={"Contact Me"} />
+      <Contact />
+      <Footer />
     </main>
   );
 }

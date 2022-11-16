@@ -5,7 +5,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-type projectProps = {
+interface IProjectProps {
   title: string;
   description: string;
   site: string;
@@ -13,9 +13,9 @@ type projectProps = {
   imageSrc: string;
   date: string;
   tags: string[];
-};
+}
 
-function Project({
+export default function Project({
   title,
   description,
   site,
@@ -23,7 +23,7 @@ function Project({
   imageSrc,
   date,
   tags,
-}: projectProps) {
+}: IProjectProps) {
   return (
     <div className="card shadow-lg rounded-lg relative overflow-hidden mobile-only:w-64 desktop-only:w-96 h-80">
       <img src={imageSrc} className="object-cover w-full h-[80%]" alt="" />
@@ -46,7 +46,7 @@ function Project({
         </div>
         <p className="text-left px-4 text-xs font-body">{description}</p>
         <div className="flex justify-between child:flex-1 gap-8 p-4">
-          {site ? (
+          {site && (
             <a
               className="rounded-lg bg-gray-veryLight p-2 text-center"
               href={site}
@@ -57,10 +57,8 @@ function Project({
                 className="mx-1"
               ></FontAwesomeIcon>
             </a>
-          ) : (
-            ""
-          )}{" "}
-          {code ? (
+          )}
+          {code && (
             <a
               className="rounded-lg bg-gray-veryLight p-2 text-center"
               href={code}
@@ -68,13 +66,9 @@ function Project({
               Code{" "}
               <FontAwesomeIcon icon={faCode} className="mx-1"></FontAwesomeIcon>
             </a>
-          ) : (
-            ""
           )}
         </div>
       </div>
     </div>
   );
 }
-
-export default Project;

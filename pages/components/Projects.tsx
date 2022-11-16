@@ -7,7 +7,7 @@ import useSWR from "swr";
 //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-function Projects() {
+export default function Projects() {
   //Set up SWR to run the fetcher function when calling "/api/staticdata"
   //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
   const { data, error } = useSWR("/api/staticdata", fetcher);
@@ -47,5 +47,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;

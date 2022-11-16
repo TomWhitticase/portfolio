@@ -1,5 +1,14 @@
 [
   {
+    "title": "Hex Colour Guess",
+    "date": "2022-11",
+    "image": "images/colourGuess.png",
+    "description": "Guess the hex code of the colour! A simple web minigame made using NextJS.",
+    "tags": ["NextJS", "TypeScript", "TailwindCSS"],
+    "site": "https://colour-guess.vercel.app/",
+    "code": "https://github.com/TomWhitticase/colour-guess"
+  },
+  {
     "title": "Planner",
     "date": "2022-09",
     "image": "images/planner.webp",
@@ -14,7 +23,7 @@
     "image": "images/adventureGame.webp",
     "description": "An 2D sandbox game featuring procedurally generated tile terrain, building, mining, crafting NPCs with pathfinding and combat. Created for my A-Level CS Coursework",
     "tags": ["C#", "Unity"],
-    "code": ""
+    "code": "https://github.com/TomWhitticase/AdventureGame/tree/master"
   },
   {
     "title": "Word Guess",
@@ -37,7 +46,7 @@
   {
     "title": "Wedding Venues",
     "date": "2022-04",
-    "image": "images/weddingVenues.webp",
+    "image": "images/weddingVenues.png",
     "description": "A website for searching for a wedding venue.",
     "tags": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
     "site": "https://wedding-venues.vercel.app/",

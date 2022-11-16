@@ -4,12 +4,12 @@ import React from "react";
 //font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-type subHeaderProps = {
+interface ISubHeaderProps {
   text: string;
   icon: IconDefinition;
-};
+}
 
-function SubHeader({ icon, text }: subHeaderProps) {
+export default function SubHeader({ icon, text }: ISubHeaderProps) {
   return (
     <div className="w-full bg-main shadow-lg z-[5] relative py-8 text-center">
       <h2>
@@ -19,5 +19,3 @@ function SubHeader({ icon, text }: subHeaderProps) {
     </div>
   );
 }
-
-export default SubHeader;

@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-black w-full text-xl text-center text-white flex flex-col justify-center gap-4">
       <div className="text-2xl p-4 flex gap-8 justify-center">
@@ -39,5 +39,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

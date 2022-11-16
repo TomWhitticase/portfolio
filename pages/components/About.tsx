@@ -2,7 +2,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-function About() {
+export default function About() {
   return (
     <div className="w-full bg-[url('/images/mountains.svg')] bg-no-repeat bg-cover bg-fixed">
       <div className="flex flex-row gap-10 flex-wrap justify-center">
@@ -51,5 +51,3 @@ function About() {
     </div>
   );
 }
-
-export default About;

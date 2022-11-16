@@ -7,7 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-function Contact() {
+export default function Contact() {
   return (
     <div
       id="contact"
@@ -29,7 +29,7 @@ function Contact() {
           <FontAwesomeIcon
             icon={faUser}
             className="absolute top-[50%] -translate-y-[50%] left-2"
-          ></FontAwesomeIcon>
+          />
         </div>
 
         <div className="relative w-full">
@@ -68,5 +68,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;
