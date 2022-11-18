@@ -33,7 +33,7 @@ export default function Footer() {
 
       <h4>
         Made with <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> by Tom
-        Whitticase using NextJS and Tailwind
+        Whitticase
       </h4>
       <h4>© 2022 Tom Whitticase</h4>
     </footer>
