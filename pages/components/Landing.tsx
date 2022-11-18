@@ -17,7 +17,7 @@ export default function Landing() {
 
           <h2 className="text-3xl text-left text-gray-light">
             I am a <span className="text-orange">full stack</span> developer
-            <span className="">|</span>
+            <span className="blink">|</span>
           </h2>
 
           <div className="flex flex-col">
