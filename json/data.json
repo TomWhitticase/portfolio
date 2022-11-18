@@ -29,8 +29,8 @@
     "title": "Word Guess",
     "date": "2022-08",
     "image": "images/wordGuess.webp",
-    "description": "A wordle clone with some extra features.",
-    "tags": ["HTML", "CSS", "JavaScript", "API"],
+    "description": "A wordle clone with some extra features. Fetches words using a random word API.",
+    "tags": ["HTML", "CSS", "JavaScript"],
     "site": "https://tomwhitticase.github.io/WordGuess/",
     "code": "https://github.com/TomWhitticase/WordGuess"
   },
@@ -38,8 +38,8 @@
     "title": "Word Finder",
     "date": "2022-08",
     "image": "images/wordFinder.webp",
-    "description": "A website that helps you solve wordles.",
-    "tags": ["HTML", "CSS", "JavaScript", "API"],
+    "description": "A website that helps you solve wordles. Fetches words using a random word API.",
+    "tags": ["HTML", "CSS", "JavaScript"],
     "site": "https://tomwhitticase.github.io/WordFinder/",
     "code": "https://github.com/TomWhitticase/WordFinder"
   },
@@ -61,7 +61,7 @@
     "code": "https://github.com/TomWhitticase/ComputerAccessoriesShop"
   },
   {
-    "title": "Library Book Loans ",
+    "title": "Library Book Loans",
     "date": "2021-12",
     "image": "images/librarySystem.webp",
     "description": "An application for librarians to manage book loans and analyze trends to give personalised book reccomendations.",
@@ -73,7 +73,7 @@
     "date": "2022-05",
     "image": "images/arduino.webp",
     "description": "An arduino program for displaying and interacting with data channels using an lcd screen and buttons.",
-    "tags": ["C++", "Arduino"],
+    "tags": ["C", "Arduino"],
     "code": "https://github.com/TomWhitticase/DataMonitor"
   },
   {
