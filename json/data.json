@@ -4,7 +4,7 @@
     "date": "2022-11",
     "image": "images/colourGuess.png",
     "description": "Guess the hex code of the colour! A simple web minigame made using NextJS.",
-    "tags": ["NextJS", "TypeScript", "TailwindCSS"],
+    "tags": ["NextJS", "React", "TypeScript", "TailwindCSS"],
     "site": "https://colour-guess.vercel.app/",
     "code": "https://github.com/TomWhitticase/colour-guess"
   },
