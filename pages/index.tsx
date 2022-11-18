@@ -1,26 +1,15 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SubHeader from "./components/SubHeader";
-import Skill from "./components/Skill";
 
 //font awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowDown,
-  faEnvelope,
   faUser,
-  faArrowUpRightFromSquare,
   faCogs,
   faLightbulb,
   faHandshakeSimple,
-  faMessage,
-  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedin,
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import {} from "@fortawesome/free-brands-svg-icons";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Landing from "./components/Landing";
@@ -58,7 +47,4 @@ export default function Home() {
 /*
 Ask Dawid:
   shadow around sub header
-
-
-
 */
