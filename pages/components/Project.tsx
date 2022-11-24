@@ -25,7 +25,7 @@ export default function Project({
   tags,
 }: IProjectProps) {
   return (
-    <div className="card shadow-lg rounded-lg relative overflow-hidden mobile-only:w-64 desktop-only:w-96 h-80">
+    <div className="card dark:bg-gray-medium shadow-lg rounded-lg relative overflow-hidden mobile-only:w-64 desktop-only:w-96 h-80">
       <img src={imageSrc} className="object-cover w-full h-[80%]" alt="" />
       <div className="absolute top-0">
         <div className="flex p-2 gap-2 flex-wrap child:text-xs child:z-[3] child:shadow-lg child:rounded-md child:p-2">
@@ -37,10 +37,10 @@ export default function Project({
         </div>
       </div>
       <div className=""></div>
-      <div className="card__overlay">
-        <div className="card__header">
+      <div className="card__overlay dark:bg-gray-dark">
+        <div className="card__header dark:bg-gray-dark">
           <div className="card__header-text">
-            <h3 className="text-left ">{date}</h3>
+            <h3 className="text-left dark:text-gray-light">{date}</h3>
             <h2 className="text-left text-green-light">{title}</h2>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Project({
         <div className="flex justify-between child:flex-1 gap-8 p-4">
           {site && (
             <a
-              className="rounded-lg bg-gray-veryLight p-2 text-center"
+              className="rounded-lg bg-gray-veryLight dark:bg-gray-medium dark:text-gray-veryLight p-2 text-center"
               href={site}
             >
               View{" "}
@@ -60,7 +60,7 @@ export default function Project({
           )}
           {code && (
             <a
-              className="rounded-lg bg-gray-veryLight p-2 text-center"
+              className="rounded-lg bg-gray-veryLight p-2 text-center dark:bg-gray-medium dark:text-gray-veryLight"
               href={code}
             >
               Code{" "}

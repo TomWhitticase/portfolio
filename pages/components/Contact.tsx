@@ -77,7 +77,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-[url('/images/polygons.svg')]  bg-fixed bg-cover bg-no-repeat w-full">
+    <div className="dark:text-gray-veryLight bg-[url('/images/polygons.svg')] dark:bg-[url('/images/polygons-dark.svg')] bg-fixed bg-cover bg-no-repeat w-full">
       <ToastContainer />
       <form
         onSubmit={sendEmail}
@@ -89,7 +89,7 @@ export default function Contact() {
             type="text"
             required
             placeholder="Name"
-            className="w-full p-2 pl-8 shadow-lg"
+            className="w-full p-2 pl-8 shadow-lg dark:bg-gray-medium"
             onChange={handleNameChange}
             value={name}
           />
@@ -105,7 +105,7 @@ export default function Contact() {
             type="email"
             required
             placeholder="Email Address"
-            className="w-full p-2 pl-8 shadow-lg"
+            className="w-full p-2 pl-8 shadow-lg dark:bg-gray-medium"
             onChange={handleEmailChange}
             value={email}
           />
@@ -120,7 +120,7 @@ export default function Contact() {
             rows={4}
             required
             placeholder="Message"
-            className="w-full p-2 pl-8 shadow-lg"
+            className="w-full p-2 pl-8 shadow-lg dark:bg-gray-medium"
             onChange={handleMessageChange}
             value={message}
           ></textarea>

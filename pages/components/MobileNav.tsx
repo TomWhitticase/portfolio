@@ -16,7 +16,7 @@ export default function MobileNav(props: mobileNavProps) {
         navOpen ? "" : "hidden"
       }`}
     >
-      <div className="fixed right-0 left-1/2 top-0 bottom-0 bg-main font-bold font-title shadow-lg flex flex-col gap-4 p-4">
+      <div className="fixed right-0 left-1/2 top-0 bottom-0 bg-main dark:bg-gray-dark dark:text-white font-bold font-title shadow-lg flex flex-col gap-4 p-4">
         <div className="flex justify-end">
           <button className="w-min px-4" onClick={() => setNavOpen(false)}>
             <FontAwesomeIcon icon={faClose}></FontAwesomeIcon>

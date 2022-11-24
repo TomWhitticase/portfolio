@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -15,7 +16,7 @@ module.exports = {
         },
         orange: "	hsl(34, 97%, 46%)",
         gray: {
-          veryLight: "hsl(0, 0%, 90%)",
+          veryLight: "hsl(0, 0%, 80%)",
           light: "hsl(0, 0%, 50%)",
           medium: "hsl(0, 0%, 40%)",
           dark: "hsl(0, 0%, 30%)",

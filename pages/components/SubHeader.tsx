@@ -11,7 +11,7 @@ interface ISubHeaderProps {
 
 export default function SubHeader({ icon, text }: ISubHeaderProps) {
   return (
-    <div className="w-full bg-main shadow-lg z-[5] relative py-8 text-center">
+    <div className="w-full bg-main dark:bg-gray-dark dark:text-white shadow-lg z-[5] relative py-8 text-center">
       <h2>
         {text}
         <FontAwesomeIcon icon={icon} className="text-orange mx-1" />

@@ -9,7 +9,7 @@ interface IHeaderProps {
 
 export default function Header({ setNavOpen }: IHeaderProps) {
   return (
-    <header className="fixed top-0 w-screen shadow-lg p-4 h-16 bg-main/80 backdrop-blur-lg z-10">
+    <header className="dark:text-white fixed top-0 w-screen shadow-lg p-4 h-16 bg-main/80 dark:bg-gray-dark/80 backdrop-blur-lg z-10">
       <div className="flex justify-between mx-8">
         <a
           href=""

@@ -9,7 +9,7 @@ import React from "react";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen py-16 flex justify-center items-center  bg-[url('/images/CircuitBoard.svg')] dark:bg-[url('/images/CircuitBoard-dark.svg')] bg-no-repeat bg-cover bg-fixed w-[screen]">
+    <div className="dark:text-white min-h-screen py-16 flex justify-center items-center  bg-[url('/images/CircuitBoard.svg')] dark:bg-[url('/images/CircuitBoard-dark.svg')] bg-no-repeat bg-cover bg-fixed w-[screen]">
       <div className="flex flex-row p-4 gap-20 flex-wrap justify-center items-center">
         <div className="w-auto p-4 flex flex-col items-start">
           <h1 className="">Hello there!</h1>

@@ -17,14 +17,14 @@
   }
 
   p {
-    @apply text-base drop-shadow-lg font-body text-gray-medium;
+    @apply text-base drop-shadow-lg font-body text-gray-medium dark:text-gray-veryLight;
   }
 
   .btn-1 {
     @apply bg-green-light rounded-lg shadow-lg text-white py-4 px-8 font-bold font-title text-lg;
   }
   .icon {
-    @apply text-3xl text-gray-dark;
+    @apply text-3xl text-gray-dark dark:text-gray-veryLight;
   }
 
   .card__overlay {
@@ -65,11 +65,8 @@
 
   .hover-underline::before {
     content: "";
-    position: absolute;
 
-    bottom: 0;
-    left: 0;
-    @apply bg-green-light w-full h-1 rounded-full;
+    @apply absolute bg-green-light w-full h-1 -bottom-1 left-0 rounded-full;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }

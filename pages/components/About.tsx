@@ -4,7 +4,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="w-full bg-[url('/images/mountains.svg')] bg-no-repeat bg-cover bg-fixed">
+    <div className="w-full bg-[url('/images/mountains.svg')] dark:bg-[url('/images/mountains-dark.svg')]  bg-no-repeat bg-cover bg-fixed">
       <div className="flex flex-row gap-10 flex-wrap justify-center">
         <div className="flex desktop-only:flex-row mobile-only:flex-col gap-10 py-16">
           <img
@@ -13,24 +13,24 @@ export default function About() {
           />
           <div className="flex flex-col justify-between items-between gap-4 p-4 w-full">
             <div className="flex flex-col gap-4 desktop-only:max-w-[20rem]">
-              <h3>
+              <p>
                 I am a second year undergraduate Computer Science student
                 studying at
                 <a
                   href="https://www.lboro.ac.uk/"
                   target="_blank"
-                  className="text-green-dark font-bold mx-1"
+                  className="text-green-light font-bold mx-1"
                 >
                   Loughborough University
                 </a>
                 in the UK. I am passionate about programming and I am always
                 teaching myself new skills. I am currently looking for a
                 placement year starting summer 2023.
-              </h3>
-              <h3>
+              </p>
+              <p>
                 I love making and playing electric guitars. I enjoy skiing and
                 archery.
-              </h3>
+              </p>
             </div>
 
             <a
