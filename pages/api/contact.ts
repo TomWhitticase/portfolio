@@ -1,6 +1,7 @@
+import type { NextApiRequest, NextApiResponse } from "next";
 const nodemailer = require("nodemailer");
 
-export default async (req, res) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   const transporter = nodemailer.createTransport({
     service: "hotmail",
     auth: {
