@@ -1,3 +1,4 @@
+import { InformationEvent } from "http";
 import type { NextApiRequest, NextApiResponse } from "next";
 const nodemailer = require("nodemailer");
 
@@ -12,7 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   await new Promise((resolve, reject) => {
     // verify connection configuration
-    transporter.verify(function (error, success) {
+    transporter.verify(function (error: Error, success: InformationEvent) {
       if (error) {
         console.log(error);
         reject(error);
@@ -35,7 +36,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   await new Promise((resolve, reject) => {
     // send mail
-    transporter.sendMail(mailData, (err, info) => {
+    transporter.sendMail(mailData, (err: Error, info: InformationEvent) => {
       if (err) {
         console.error(err);
         reject(err);
