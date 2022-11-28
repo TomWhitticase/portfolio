@@ -9,6 +9,15 @@
     "code": "https://github.com/TomWhitticase/colour-guess"
   },
   {
+    "title": "CPU-S Simulator",
+    "date": "2022-09",
+    "image": "images/cpu-s-simulator.png",
+    "description": "A web app that simulates a basic CPU and allows you to write and run assembly code",
+    "tags": ["HTML", "TailwindCSS", "JavaScript"],
+    "site": "https://tomwhitticase.github.io/CPU-S-Simulator/",
+    "code": "https://github.com/TomWhitticase/CPU-S-Simulator"
+  },
+  {
     "title": "Planner",
     "date": "2022-09",
     "image": "images/planner.webp",
@@ -16,14 +25,6 @@
     "tags": ["React", "JavaScript", "TailwindCSS"],
     "site": "https://tomwhitticase.github.io/Planner/",
     "code": "https://github.com/TomWhitticase/Planner"
-  },
-  {
-    "title": "Adventure Game",
-    "date": "2019-10",
-    "image": "images/adventureGame.webp",
-    "description": "An 2D sandbox game featuring procedurally generated tile terrain, building, mining, crafting NPCs with pathfinding and combat. Created for my A-Level CS Coursework",
-    "tags": ["C#", "Unity"],
-    "code": "https://github.com/TomWhitticase/AdventureGame/tree/master"
   },
   {
     "title": "Word Guess",
@@ -44,13 +45,12 @@
     "code": "https://github.com/TomWhitticase/WordFinder"
   },
   {
-    "title": "Wedding Venues",
-    "date": "2022-04",
-    "image": "images/weddingVenues.png",
-    "description": "A website for searching for a wedding venue.",
-    "tags": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
-    "site": "https://wedding-venues.vercel.app/",
-    "code": "https://github.com/TomWhitticase/WeddingVenues"
+    "title": "Data Channel Monitor",
+    "date": "2022-05",
+    "image": "images/arduino.webp",
+    "description": "An arduino program for displaying and interacting with data channels using an lcd screen and buttons.",
+    "tags": ["C", "Arduino"],
+    "code": "https://github.com/TomWhitticase/DataMonitor"
   },
   {
     "title": "Computer Accessories Shop",
@@ -61,6 +61,15 @@
     "code": "https://github.com/TomWhitticase/ComputerAccessoriesShop"
   },
   {
+    "title": "Wedding Venues",
+    "date": "2022-04",
+    "image": "images/weddingVenues.png",
+    "description": "A website for searching for a wedding venue.",
+    "tags": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
+    "site": "https://wedding-venues.vercel.app/",
+    "code": "https://github.com/TomWhitticase/WeddingVenues"
+  },
+  {
     "title": "Library Book Loans",
     "date": "2021-12",
     "image": "images/librarySystem.webp",
@@ -69,20 +78,11 @@
     "code": "https://github.com/TomWhitticase/LibrarySystem"
   },
   {
-    "title": "Data Channel Monitor",
-    "date": "2022-05",
-    "image": "images/arduino.webp",
-    "description": "An arduino program for displaying and interacting with data channels using an lcd screen and buttons.",
-    "tags": ["C", "Arduino"],
-    "code": "https://github.com/TomWhitticase/DataMonitor"
-  },
-  {
-    "title": "CPU-S Simulator",
-    "date": "2022-09",
-    "image": "images/cpu-s-simulator.png",
-    "description": "A web app that simulates a basic CPU and allows you to write and run assembly code",
-    "tags": ["HTML", "TailwindCSS", "JavaScript"],
-    "site": "https://tomwhitticase.github.io/CPU-S-Simulator/",
-    "code": "https://github.com/TomWhitticase/CPU-S-Simulator"
+    "title": "Adventure Game",
+    "date": "2019-10",
+    "image": "images/adventureGame.webp",
+    "description": "An 2D sandbox game featuring procedurally generated tile terrain, building, mining, crafting NPCs with pathfinding and combat. Created for my A-Level CS Coursework",
+    "tags": ["C#", "Unity"],
+    "code": "https://github.com/TomWhitticase/AdventureGame/tree/master"
   }
 ]
