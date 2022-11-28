@@ -81,7 +81,7 @@
     "title": "Adventure Game",
     "date": "2019-10",
     "image": "images/adventureGame.webp",
-    "description": "An 2D sandbox game featuring procedurally generated tile terrain, building, mining, crafting NPCs with pathfinding and combat. Created for my A-Level CS Coursework",
+    "description": "A 2D sandbox game featuring infinite procedurally generated terrain, building, mining, crafting NPCs with pathfinding and combat. Created for my A-Level CS Coursework",
     "tags": ["C#", "Unity"],
     "code": "https://github.com/TomWhitticase/AdventureGame/tree/master"
   }
