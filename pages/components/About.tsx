@@ -7,6 +7,10 @@ export default function About() {
     <div className="w-full bg-[url('/images/mountains.svg')] dark:bg-[url('/images/mountains-dark.svg')]  bg-no-repeat bg-cover bg-fixed">
       <div className="flex flex-row gap-10 flex-wrap justify-center">
         <div className="flex desktop-only:flex-row mobile-only:flex-col gap-10 py-16">
+          <img
+            className="object-cover w-64 rounded-lg m-auto"
+            src="images/topofmountain.jpg"
+          />
           <div className="flex flex-col justify-between items-between gap-4 p-4 w-full">
             <div className="flex flex-col gap-4 desktop-only:max-w-[20rem]">
               <p>
@@ -24,7 +28,11 @@ export default function About() {
               </p>
               <p>
                 I am currently focussing on using NextJS and React to develop
-                full stack websites.
+                full stack applications.
+              </p>
+              <p>
+                My hobbies include building and playing electric guitars,
+                skiing, and archery.
               </p>
             </div>
 
