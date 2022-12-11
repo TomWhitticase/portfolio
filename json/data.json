@@ -3,7 +3,7 @@
     "title": "To-do List",
     "date": "2022-12",
     "image": "images/todolist.png",
-    "description": "Saves your tasks in local storage. Emails you your todo list.",
+    "description": "Created using NextJS and MUI, stores tasks in local storage and send you an email listing your tasks",
     "tags": ["NextJS", "React", "TypeScript", "MUI"],
     "site": "https://todolist-seven-neon.vercel.app/",
     "code": ""
