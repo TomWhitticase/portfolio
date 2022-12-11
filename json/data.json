@@ -1,5 +1,14 @@
 [
   {
+    "title": "To-do List",
+    "date": "2022-12",
+    "image": "images/todolist.png",
+    "description": "Saves your tasks in local storage. Emails you your todo list.",
+    "tags": ["NextJS", "React", "TypeScript", "MUI"],
+    "site": "https://todolist-seven-neon.vercel.app/",
+    "code": ""
+  },
+  {
     "title": "Hex Colour Guess",
     "date": "2022-11",
     "image": "images/colourGuess.png",
