@@ -17,13 +17,16 @@ export default function Skills() {
         <Skill text={"C#"} imageSrc={"images/c-sharp.png"}></Skill>
       </div>
 
-      <h2 className="text-center p-4 pt-8 text-white">Frameworks</h2>
+      <h2 className="text-center p-4 pt-8 text-white">
+        Frameworks & Libraries
+      </h2>
       <div className="flex flex-wrap justify-center gap-4">
         <Skill text={"NodeJS"} imageSrc={"images/node-js.png"}></Skill>
         <Skill text={"NextJS"} imageSrc={"images/nextjs.png"}></Skill>
         <Skill text={"ReactJS"} imageSrc={"images/react.png"}></Skill>
         <Skill text={"JQuery"} imageSrc={"images/jquery.png"}></Skill>
         <Skill text={"TailwindCSS"} imageSrc={"images/tailwind.png"}></Skill>
+        <Skill text={"MUI"} imageSrc={"images/mui.png"}></Skill>
         <Skill text={"Bootstrap"} imageSrc={"images/bootstrap.png"}></Skill>
       </div>
 
