@@ -27,15 +27,6 @@
     "code": "https://github.com/TomWhitticase/CPU-S-Simulator"
   },
   {
-    "title": "Planner",
-    "date": "2022-09",
-    "image": "images/planner.webp",
-    "description": "A web app for keeping track of meetings.",
-    "tags": ["React", "JavaScript", "TailwindCSS"],
-    "site": "https://tomwhitticase.github.io/Planner/",
-    "code": "https://github.com/TomWhitticase/Planner"
-  },
-  {
     "title": "Word Guess",
     "date": "2022-08",
     "image": "images/wordGuess.webp",
