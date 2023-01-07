@@ -41,7 +41,7 @@ export default function About() {
               href="https://docs.google.com/document/d/1VDgQEV572j5iIcepGR9uKMEozhZUkPmv02rsyr3mDLI/edit?usp=sharing"
             >
               <button className="btn-1">
-                Resume
+                View my CV
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
                   className="mx-1"
