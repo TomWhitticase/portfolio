@@ -14,8 +14,8 @@
     "image": "images/todolist.png",
     "description": "Created using NextJS and MUI. Stores tasks in local storage and uses Nodemailer to send an email containing your tasks.",
     "tags": ["NextJS", "React", "NodeJS", "TypeScript", "MUI"],
-    "site": "https://todolist-seven-neon.vercel.app/",
-    "code": ""
+    "site": "https://todolist-tomwhitticase.vercel.app",
+    "code": "https://github.com/TomWhitticase/todolist"
   },
   {
     "title": "Hex Colour Guess",
