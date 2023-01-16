@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 interface IProjectProps {
+  index: number;
   title: string;
   description: string;
   site: string;
@@ -13,9 +14,11 @@ interface IProjectProps {
   imageSrc: string;
   date: string;
   tags: string[];
+  width: string;
 }
 
 export default function Project({
+  index,
   title,
   description,
   site,
@@ -23,9 +26,13 @@ export default function Project({
   imageSrc,
   date,
   tags,
+  width,
 }: IProjectProps) {
   return (
-    <div className="card dark:bg-gray-medium shadow-lg rounded-lg relative overflow-hidden mobile-only:w-64 desktop-only:w-96 h-80">
+    <div
+      className={`card dark:bg-gray-medium shadow-lg rounded-lg relative overflow-hidden h-80 mobile-only:max-w-[15rem]`}
+      style={{ width: width }}
+    >
       <img src={imageSrc} className="object-cover w-full h-[80%]" alt="" />
       <div className="absolute top-0">
         <div className="flex p-2 gap-2 flex-wrap child:text-xs child:z-[3] child:shadow-lg child:rounded-md child:p-2">
