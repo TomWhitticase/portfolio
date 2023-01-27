@@ -23,8 +23,7 @@ export default function About() {
                   Loughborough University
                 </a>
                 in the UK. I am passionate about programming and I am always
-                teaching myself new skills. I am currently looking for a
-                placement year starting summer 2023.
+                teaching myself new skills.
               </p>
               <p>
                 I am currently focussing on using NextJS and React to develop
