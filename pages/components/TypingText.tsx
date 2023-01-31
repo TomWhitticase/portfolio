@@ -43,7 +43,7 @@ export default function TypingText({
         {displayedText}
         <span className="blink">|</span>
         <span className="text-transparent">
-          {text !== null && text.replace(displayedText, "")}
+          {text.replace && text.replace(displayedText, "")}
         </span>
       </div>
     </div>

@@ -26,7 +26,7 @@ export default function Skills() {
         <Skill text={"ReactJS"} imageSrc={"images/react.png"}></Skill>
         <Skill text={"JQuery"} imageSrc={"images/jquery.png"}></Skill>
         <Skill text={"TailwindCSS"} imageSrc={"images/tailwind.png"}></Skill>
-        <Skill text={"MUI"} imageSrc={"images/mui.png"}></Skill>
+        <Skill text={"MaterialUI"} imageSrc={"images/mui.png"}></Skill>
         <Skill text={"Bootstrap"} imageSrc={"images/bootstrap.png"}></Skill>
       </div>
 
