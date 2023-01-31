@@ -12,6 +12,7 @@ export default function TypingText({
   backspaceSpeed = 50,
 }: IProps) {
   const [displayedText, setDisplayedText] = useState("");
+  const [trailText, setTrailText] = useState(text);
 
   useEffect(() => {
     const typeText = () => {
@@ -37,14 +38,16 @@ export default function TypingText({
     typeText();
   }, [text, typingSpeed]);
 
+  useEffect(() => {
+    setTrailText(text.replace(displayedText, ""));
+  }, [displayedText, trailText]);
+
   return (
     <div>
       <div className="">
         {displayedText}
         <span className="blink">|</span>
-        <span className="text-transparent">
-          {text.replace && text.replace(displayedText, "")}
-        </span>
+        <span className="text-transparent">{trailText}</span>
       </div>
     </div>
   );
