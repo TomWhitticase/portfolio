@@ -6,6 +6,8 @@ import {
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import DecryptingText from "./DecryptingText";
+import TypingText from "./TypingText";
 
 export default function Landing() {
   return (
@@ -16,8 +18,7 @@ export default function Landing() {
           <h1 className="text-green-light">I'm Tom.</h1>
 
           <h2 className="text-3xl text-left text-gray-light">
-            I am a <span className="text-orange">full stack</span> developer
-            <span className="blink">|</span>
+            <TypingText text={"I am a full stack developer"} />
           </h2>
 
           <div className="flex flex-col">
@@ -46,10 +47,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="my-auto mx-8">
-          <img
-            className="rounded-2xl shadow-lg object-cover w-72"
-            src="images/tombeachmalaga.jpg"
-          />
+          <img className="image-1" src="images/tombeachmalaga.jpg" />
         </div>
       </div>
     </div>

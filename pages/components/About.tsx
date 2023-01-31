@@ -8,7 +8,7 @@ export default function About() {
       <div className="flex flex-row gap-10 flex-wrap justify-center">
         <div className="flex desktop-only:flex-row mobile-only:flex-col gap-10 py-16">
           <img
-            className="object-cover w-64 rounded-lg m-auto"
+            className="object-cover w-64 rounded-lg m-auto image-1"
             src="images/topofmountain.jpg"
           />
           <div className="flex flex-col justify-between items-between gap-4 p-4 w-full">

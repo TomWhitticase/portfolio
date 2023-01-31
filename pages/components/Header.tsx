@@ -16,7 +16,7 @@ export default function Header({ setNavOpen }: IHeaderProps) {
           className="font-bold text-xl hover:text-green-light font-title transition duration-300 flex gap-2 items-center"
         >
           <img src="images/logo.png" className="w-8 align-bottom inline" />
-          TomWhitticase
+          Tom Whitticase
         </a>
         <div className="flex justify-center items-center gap-8 font-bold font-title mobile-only:hidden">
           {[

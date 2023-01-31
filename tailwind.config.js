@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        title: ["Poppins", "sans-serif"],
+        title: ["Monospace", "sans-serif"],
         body: ["Nunito", "sans-serif"],
       },
     },

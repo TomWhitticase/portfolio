@@ -89,4 +89,8 @@
       visibility: hidden;
     }
   }
+
+  .image-1 {
+    @apply rounded-2xl shadow-lg object-cover w-72 hover:rotate-1 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500;
+  }
 }
