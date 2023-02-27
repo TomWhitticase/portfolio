@@ -3,7 +3,7 @@
     "title": "Tom's Chatrooms",
     "date": "2023-02",
     "image": "images/chatrooms.png",
-    "description": "A chatroom app made using T3 stack, socket.io, react-query and Chakra UI. Sign in using your Github account",
+    "description": "A chatroom app made using the T3 stack, socket.io, react-query and Chakra UI. Sign in using your Github account",
     "tags": [
       "Socket.io",
       "ChakraUI",
