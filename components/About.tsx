@@ -54,7 +54,7 @@ export default function About() {
   return (
     <div className="dark:text-white min-h-screen py-16 flex justify-center items-center  bg-[url('/images/CircuitBoard.svg')] dark:bg-[url('/images/CircuitBoard-dark.svg')] bg-no-repeat bg-cover bg-fixed w-[screen]">
       <div className="flex flex-row flex-wrap items-center justify-center gap-20 p-4">
-        <div className="flex flex-col items-start gap-4 p-4 desktop-only:w-[40rem]">
+        <div className="flex flex-col items-start gap-4 p-4 w-full desktop-only:w-[40rem]">
           <h1 className="py-4 text-4xl font-bold font-title">
             {"<About Me />"}
           </h1>

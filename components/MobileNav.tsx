@@ -18,7 +18,7 @@ export default function MobileNav(props: mobileNavProps) {
           navOpen ? "" : "translate-x-full"
         }`}
       >
-        <div className="fixed top-0 bottom-0 right-0 flex flex-col gap-4 p-4 font-bold shadow-lg left-1/2 bg-main dark:bg-gray-dark dark:text-white font-title">
+        <div className="fixed top-0 bottom-0 right-0 flex flex-col gap-4 p-4 font-bold bg-white shadow-lg left-1/2 font-title">
           <div className="flex justify-end">
             <button
               className="px-4 py-2 w-min"

@@ -30,10 +30,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="flex items-center justify-center gap-8 p-8 bg-slate-100">
+    <div className="flex items-center justify-center gap-8 p-8 mobile-only:flex-col bg-slate-100">
       {projects.map((project, i) => (
         <Link
-          className="flex flex-col justify-between flex-1 w-1/3 h-[20rem] gap-4 p-4 transition-all duration-300 bg-white rounded-lg shadow-lg cursor-pointer group hover:-translate-y-2"
+          className="flex flex-col justify-between flex-1 desktop-only:w-1/3 h-[20rem] gap-4 p-4 transition-all duration-300 bg-white rounded-lg shadow-lg cursor-pointer group hover:-translate-y-2"
           key={i}
           href={project.link}
         >

@@ -52,7 +52,7 @@ export default function Terminal({
   const trailText = text.slice(displayedText.length);
 
   return (
-    <div className="w-[500px] h-[140px] text-lg">
+    <div className="w-[500px] overflow-clip mobile-only:w-[220px] h-[140px] text-lg mobile-only:text-[0.6rem] mobile-only:leading-4">
       <div className="font-mono whitespace-pre">
         {displayedText}
         <span className="blink">|</span>
