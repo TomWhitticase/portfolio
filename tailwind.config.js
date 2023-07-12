@@ -9,18 +9,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "hsl(0, 0%, 100%)",
-        green: {
-          light: "hsl(108, 44%, 43%)",
-          dark: "	hsl(120, 40%, 33%)",
-        },
-        orange: "	hsl(34, 97%, 46%)",
-        gray: {
-          veryLight: "hsl(0, 0%, 80%)",
-          light: "hsl(0, 0%, 50%)",
-          medium: "hsl(0, 0%, 40%)",
-          dark: "hsl(0, 0%, 30%)",
-          veryDark: "hsl(0, 0%, 20%)",
+        theme: {
+          blue: {
+            DEFAULT: "#35BDE8",
+            light: "#6CCBEF",
+            dark: "#2A9DB0",
+          },
+          main: "hsl(0, 0%, 100%)",
+          green: {
+            light: "hsl(108, 44%, 43%)",
+            dark: "	hsl(120, 40%, 33%)",
+          },
+          orange: "	hsl(34, 97%, 46%)",
+          gray: {
+            veryLight: "hsl(0, 0%, 80%)",
+            light: "hsl(0, 0%, 50%)",
+            medium: "hsl(0, 0%, 40%)",
+            dark: "hsl(0, 0%, 30%)",
+            veryDark: "hsl(0, 0%, 20%)",
+          },
         },
       },
       fontFamily: {

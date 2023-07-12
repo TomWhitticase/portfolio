@@ -6,8 +6,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const transporter = nodemailer.createTransport({
     service: "hotmail",
     auth: {
-      user: "tom.pe.wh.2@outlook.com",
-      pass: "8A7vGUJG",
+      user: process.env.EMAIL_USERNAME as string,
+      pass: process.env.EMAIL_PASSWORD as string,
     },
   });
 

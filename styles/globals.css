@@ -3,94 +3,44 @@
 @tailwind utilities;
 
 @layer components {
-  html {
-    @apply scroll-smooth;
-  }
-  h1 {
-    @apply text-6xl font-bold drop-shadow-lg font-title;
-  }
-  h2 {
-    @apply text-4xl font-bold drop-shadow-lg font-title;
-  }
-  h3 {
-    @apply text-lg drop-shadow-lg font-body text-gray-medium;
-  }
-
-  p {
-    @apply text-base drop-shadow-lg font-body text-gray-medium dark:text-gray-veryLight;
-  }
-
-  .btn-1 {
-    @apply bg-green-light rounded-lg shadow-lg text-white py-4 px-8 font-bold font-title text-lg;
-  }
-  .icon {
-    @apply text-3xl text-gray-dark dark:text-gray-veryLight;
-  }
-
-  .card__overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    transform: translateY(100%);
-    transition: 0.2s ease-in-out;
-    @apply bg-white;
-  }
-
-  .card:hover .card__overlay {
-    transform: translateY(0);
-  }
-  .card:hover .tag {
-    visibility: visible;
-  }
-  .tag {
-    visibility: hidden;
-  }
-
-  .card__header {
-    @apply text-white p-4 bg-white;
-    transform: translateY(-100%);
-    transition: 0.2s ease-in-out;
-  }
-
-  .card:hover .card__header {
-    transform: translateY(0);
-  }
-
-  .hover-underline {
-    position: relative;
-    text-decoration: none;
-  }
-
-  .hover-underline::before {
-    content: "";
-
-    @apply absolute bg-green-light w-full h-1 -bottom-1 left-0 rounded-full;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-
-  .hover-underline:hover::before {
-    transform: scaleX(1);
+  @keyframes blink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
   }
 
   .blink {
-    animation: blink-animation 1s steps(2, start) infinite;
-    -webkit-animation: blink-animation 1s steps(2, start) infinite;
-  }
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
-  @-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
+    animation: blink 1s steps(1) infinite;
   }
 
-  .image-1 {
-    @apply rounded-2xl shadow-lg object-cover w-72 hover:rotate-1 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500;
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Width and height for the scrollbar track and thumb */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Thumb */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  /* On hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 }
